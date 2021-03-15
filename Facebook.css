@@ -1,0 +1,158 @@
+.main-div{
+    position: fixed;
+    width:100%;
+    height: 100%;
+    left: 0;
+    top:0;
+}
+.sub-main-div{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: #f0f2f5;
+}
+.subject-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 52%;
+}
+.subject-h{
+    position: relative;
+    left:20%;
+    color: #1877f2;
+    font-size: 3rem;
+    font-weight: 900;
+}
+.subject-span{
+    position: relative;
+    left:20%;
+    color: black;
+    font-size: 1.9rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+}
+.form-main{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.form-div{
+    position: relative;
+    height: 25rem;
+    width: 28rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    z-index: 10;
+}
+.form-main-div{
+    position: relative;
+    width:100%;
+    height: 15rem;
+}
+.name-div, .pass-div{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 1rem 0rem 1rem;
+}
+.name-input{
+    position: relative;
+    width:80%;
+    height: 2.7rem;
+    border: 1px solid lightgray;
+    border-radius: 0.4rem;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    outline: none;
+}
+.name-input::placeholder{
+    position: relative;
+    left: 2rem;
+    color: lightgrey;
+}
+.btn-div{
+    position: relative;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0rem 0rem 0rem;
+}
+.login-btn{
+    background-color: #1877f2;
+    width:80%;
+    border-radius: 0.4rem;
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: white;
+}
+.forgot-pass-div{
+    position: relative;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.forgot-pass-a{
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-decoration: none;
+    text-transform: capitalize;
+
+}
+.forgot-pass-a:hover{
+    text-decoration: underline;
+}
+.new-account-div{
+    position: relative;
+    width: 100%;
+    height: 6.7rem;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid lightgray;
+}
+.new-account-btn{
+    height: 3rem;
+    width: 80%;
+    text-transform: capitalize;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    background-color: #42b72a;
+    color: white;
+    letter-spacing: 0.1rem;
+}
+@media screen and (max-width: 426px) {
+    .sub-main-div {
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+    .subject-div{
+        width: 80%;
+    }
+    .form-div{
+        top:2rem
+    }
+  }
+  /* @media screen and (min-width: 425px) and (max-width: 768px) {
+      .form-div{
+        height: 25rem;
+        width: 28rem;
+      }
+  } */
